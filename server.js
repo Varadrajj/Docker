@@ -10,19 +10,7 @@ app.get("/",(req,res)=>
 );
 
 //second o/p display using localhost:8000/product
-app.get("/product",(req,res)=>
-  {
-     var p = {
-                "id" : 45,
-                "title" : "Gerbera",
-                "description" : "Wedding flower",
-                "Unit price" : 15,
-                "quantity" : 5000
-             };
-  
-             res.send(p);
-  }
-);
+
 
 //third o/p display linking or add all static html pages
 app.use(express.static('public'));
